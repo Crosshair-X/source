@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Crosshair X is not supported on this operating system.</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+</head>
+<body style="background: #1c1c1c;">
+    
+    <div style="padding: 20px;">
+    <img src="../common-assets/images/logo.png" alt="" width="200px">
+
+    <p style="font-family: 'Nunito Sans', sans-serif; color: white; font-size: 20px; text-align: center; padding-top: 30px;">
+        Crosshair X is only supported on Windows 10 and 11. 
+    <center>
+        <img src="./Windows10.png" />
+    </center>
+</div>
+
+    <p style="font-family: 'Nunito Sans', sans-serif; color: white; font-size: 20px; text-align: center; padding-top: 30px;">
+        Please upgrade or ask for a refund on Steam.</p>
+
+    <p style="font-family: 'Nunito Sans', sans-serif; color: white; font-size: 20px; text-align: center;">
+        Sorry for the inconvenience.</p>
+    <center>
+        <button type="button" class="btn btn-primary btn-lg" onclick="quitApp()">Exit</button>
+    </center>
+    
+    <script>
+      
+        console.log(window)
+            function quitApp() {
+                console.log("Quit app")
+                window.myAPI.quit();
+    
+  
+            }
+    </script>
+</body>
+</html>

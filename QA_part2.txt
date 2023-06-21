@@ -1,0 +1,28 @@
+Additional steps to debug:
+
+Review box:
+- Start the app 10 times (on/off)
+- When the prompt pops up, "Do you like Crosshair X?" Make sure it launches the Steam app and lands on Crosshair X page
+
+Saved Modal in Designer and Custom images:
+- Try all image formats and press save, does the modal work?
+- Try a few designs and press save
+
+Old Crosshair X with new Extension
+- Delete 'CrosshairX' in Roaming
+- Opt out of Beta in Steam
+- Use newest version of Game Bar Extension
+- Does the game bar extension basically say "Desktop App out of date?"
+- Does a prompt appear in App for the user to update?
+
+New Crosshair X with old extension
+- Delete 'CrosshairX' in Roaming
+- Opt into customimages2
+- Uninstall new version of Crosshair X Extension and install it directly from the Widget Store in Game Bar
+- Does the app basically tell you to update when you try to use Exclusive Fullscreen mode?
+- In the support page, does it say that its out of date (1.0.25.0 vs 1.0.26.0)
+
+New Crosshair X with New Extension
+- Try to break the experience with Game Bar. Examples below:
+- Close the extension while the app is running and then relaunch the extension. Does the crosshair update?
+- Close the app while the extension is running, and then relaunch the app, can you change the Crosshair?

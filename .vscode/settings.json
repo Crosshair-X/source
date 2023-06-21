@@ -1,0 +1,7 @@
+{
+    "i18n-ally.localesPaths": [
+        "src/localization/translations"
+    ],
+    "i18n-ally.keystyle": "nested",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

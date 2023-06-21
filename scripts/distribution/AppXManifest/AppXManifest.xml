@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+   xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+   xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10">
+  <Identity Name="47492CenterpointGaming.ProSight"
+    ProcessorArchitecture="x64"
+    Publisher="CN=747CF5E3-AC1C-4505-8387-083BCE1B82DC"
+    Version="1.0.78.0" />
+  <Properties>
+    <DisplayName>Crosshair X</DisplayName>
+    <PublisherDisplayName>CenterPoint Gaming</PublisherDisplayName>
+    <Description>Crosshair X by CenterPoint Gaming</Description>
+    <Logo>assets\StoreLogo.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14316.0" MaxVersionTested="10.0.14316.0" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust"/>
+  </Capabilities>
+  <Applications>
+    <Application Id="CrosshairX" Executable="app\CrosshairX.exe" EntryPoint="Windows.FullTrustApplication">
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+            <uap:Protocol Name="crosshair-x">
+                <uap:DisplayName>Crosshair X URL Scheme</uap:DisplayName>
+            </uap:Protocol>
+        </uap:Extension>
+        <uap5:Extension
+          Category="windows.startupTask"
+          Executable="app\CrosshairX.exe"
+          EntryPoint="Windows.FullTrustApplication">
+          <uap5:StartupTask
+            TaskId="CrosshairXStartup"
+            Enabled="false"
+            DisplayName="Crosshair X" />
+        </uap5:Extension>
+      </Extensions>
+      <uap:VisualElements
+       BackgroundColor="transparent"
+       DisplayName="Crosshair X"
+       Square150x150Logo="assets\Square150x150Logo.png"
+       Square44x44Logo="assets\Square44x44Logo.png"
+       Description="CrosshairX">
+        <uap:DefaultTile Wide310x150Logo="assets\Wide310x150Logo.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>
